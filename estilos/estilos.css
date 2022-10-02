@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins&display-swap');
+
+.body{
+    font-family: "Poppins", sans-serif;
+}
+
 .header {
     /*linear-gradiente se usa para la opacidad y ayudar a resaltar botones, letras*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/imagenes/ba1.jpg);
