@@ -1,0 +1,23 @@
+.header {
+    /*linear-gradiente se usa para la opacidad y ayudar a resaltar botones, letras*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/imagenes/ba1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 770px;
+}
+
+.img-card {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.bg-footer {
+    background-color: #006d65;
+}
+
+.a-reset {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}

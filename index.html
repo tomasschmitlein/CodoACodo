@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+    <!-- Link a nuestra hoja de estilos -->
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+
     <title>Web Schmitlein</title>
 </head>
 
@@ -17,18 +25,84 @@
     <header class="container-fluid header">
         <!--Aca arranca el nav -->
         <div class="row">
+
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
                 <div class="container-fluid">
                     <!-- imagen de codo a codo -->
                     <a class="navbar-brand" href="#">
-                        <img class="img-fluid" src="imagenes/codoacodo.png" alt="img codo a codo" width="90" height="72">
+                        <img class="img-fluid" src="imagenes/codoacodo.png" alt="img codo a codo" width="110"
+                            height="90">
                     </a>
 
+                    <ul class="navbar-nab mb-0 mb-lg-0 p-1">
+                        <li class="nav-item">
+                            <a class="nav-link active link-light" aria-current="page" href="#"><h5>Conf Bs As</h5></a>
+                        </li>
+                    </ul>
+
+                    <!-- boton burguer -->
+                    <!-- lo que querramos que quede dentro del boton burguer debe llevar el mismo ID que el valor del campo data-bs-target -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- contiene los ul/li en este div, cada li que va en este div se mete en el desplegable -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        
+                        
+                    
+                        <!--empieza la lista-->
+                        <!--ms-auto para alinear hacia la derecha-->
+                        <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Los oradores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Lugar y fecha</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Conviertete en orador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-success" aria-current="page" href="#">Comprar tickets</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
+        <!--Fila para los txt-->
+        <div class="row d-flex justify-content-center justify-content-md-end mt-md-5 mt-sm-1 gy-5 text-white text-center">
+           <!--Columna del h1-->
+            <div class="col-12  w-75 text-md-end">
+                <h1>Conf Bs As</h1>
+            </div>
+            <div class="col-12  w-75 text-md-end">
+                <p>
+                    Bs As llega por primera vez a Argentina, un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que
+                    estan creando el futuro de internet. Van a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel
+                    que tenemos para ti. <br>TE ESPERAMOS!!</br>
+                </p>
+            </div>
+            <div class="col-12 d-md-flex justify-content-md-end">
+                <a href="#">
+                    <button type="button" class="btn btn-outline-light m-2 p-1">Quiero ser orador</button>
+                </a>
+                <a href="#">
+                    <button type="button" class="btn btn-success m-2 p-1">Comprar tickets</button>
+                </a>
+            </div>
+        </div>
+
     </header>
 
 
 </body>
+
 </html>
