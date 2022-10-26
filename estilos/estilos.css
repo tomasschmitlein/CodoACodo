@@ -3,6 +3,9 @@
 .body{
     font-family: "Poppins", sans-serif;
 }
+.container-fluid header2 {
+    background-color: white;
+}
 
 .header {
     /*linear-gradiente se usa para la opacidad y ayudar a resaltar botones, letras*/
