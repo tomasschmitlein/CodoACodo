@@ -133,36 +133,36 @@
         <div class="col-12">
             <div class="row g-3">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                    <input id="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="First name">
                 </div>
                 <div class="col">
-                    <input type="text" class="form-control" aria-label="Last name" placeholder="Apellido">
+                    <input id="apellido" type="text" class="form-control" aria-label="Last name" placeholder="Apellido">
                 </div>
                 <div class="col-12">
-                    <input type="text" class="form-control" aria-label="Email" placeholder="Email..">
+                    <input id="email" type="text" class="form-control" aria-label="Email" placeholder="Email..">
                 </div>
 
                 <div class="col-6">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Seleccione una opci&oacute;n..</option>
+                    <select class="form-select" aria-label="Default select example" id="seniority">
+                        <option value="9" selected>Seleccione una opci&oacute;n..</option>
                         <option value="1">Estudiante</option>
                         <option value="2">Trainee</option>
                         <option value="3">Junior</option>
+                        <option value="0">Sin categoria</option>
                     </select>
                 </div>
                 <div class="col-6">
-                    <input type="text" class="form-control" aria-label="CantidadTickets"
-                        placeholder="Cantidad de tickets..">
+                    <input type="text" class="form-control" placeholder="Cantidad de tickets.." id="tickets">
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control text-lg-start" id="exampleFormControlTextarea1" rows="3"
-                        style="background-color:rgb(189, 189, 216) ;" readonly>Total a pagar: $</textarea>
+                    <textarea id="totalPagar" class="form-control text-lg-start" id="exampleFormControlTextarea1"
+                        rows="3" style="background-color:rgb(189, 189, 216) ;" readonly>Total a pagar: $</textarea>
                 </div>
                 <div class="col-6">
-                    <button class="btn btn-success w-100 h-70 m-3 p-3">Borrar</button>
+                    <button id="btnReset" class="btn btn-success w-100 h-70 m-3 p-3">Borrar</button>
                 </div>
                 <div class="col-6">
-                    <button class="btn btn-success w-100 h-70 m-3 p-3">Resumen</button>
+                    <button id="btnResumen" class="btn btn-success w-100 h-70 m-3 p-3">Calcular</button>
                 </div>
             </div>
         </div>
@@ -187,5 +187,7 @@
     </footer>
 
 </body>
+
+<script src="javascript/scripts.js"></script>
 
 </html>
